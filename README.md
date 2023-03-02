@@ -1,4 +1,4 @@
-# Dyanamics-NFS-Provisioning
+
 # Setup External NSF SERVER
 # CREATE CENTOS 7 NFS SERVER
 
