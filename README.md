@@ -44,7 +44,25 @@ sudo systemctl status nfs-server
  ```
  sudo exportfs -v
  ```
- ## To mount the NFS server to the remote hosts do ,
+ ### Firewall rules
+ ```
+ firewall-cmd --permanent --add-service=nfs
+ ```
+ ```
+ firewall-cmd --permanent --add-service=rpc-bind
+ ```
+ ```
+ firewall-cmd --permanent --add-service=mountd
+ ```
+ ```
+ firewall-cmd --reload
+ ```
+ ```
+ firewall-cmd --list-all
+ ```
+ # Client Machins
+ 
+ ## To mount the NFS server to the remote hosts(clients) do ,
  ```
 sudo mount -t nfs -o sync nfs_ip:/srv/nfs/kubedata /mnt
 ```
