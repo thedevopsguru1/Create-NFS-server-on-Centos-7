@@ -73,6 +73,14 @@ mount -t nfs -o sync 172.104.194.133:/srv/nfs/kubedata /mnt
 ```
 sudo mount -t nfs -o sync nfs_ip:nfs_path host_client_path
 ```
+### To check if it is mounted do :
+```
+showmount -e nfs_ip
+```
+```
+showmount -e 45.33.28.27
+```
+
 # FIX ME
 ## To mount automatically 
 ### Please at how to automatically mount them
