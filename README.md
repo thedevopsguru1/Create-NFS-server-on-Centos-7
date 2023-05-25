@@ -46,14 +46,14 @@ sudo systemctl status nfs-server
  ```
  ## To mount the NFS server to the remote hosts do ,
  ```
-sudo mount -t nfs nfs_ip:/srv/nfs/kubedata /mnt
+sudo mount -t nfs -o sync nfs_ip:/srv/nfs/kubedata /mnt
 ```
 ### Use this one
 ```
 mount -t nfs -o sync 172.104.194.133:/srv/nfs/kubedata /mnt
 ```
 ```
-sudo mount -t nfs nfs_ip:nfs_path host_client_path
+sudo mount -t nfs -o sync nfs_ip:nfs_path host_client_path
 ```
 # FIX ME
 ## To mount automatically 
