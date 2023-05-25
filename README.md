@@ -48,6 +48,10 @@ sudo systemctl status nfs-server
  ```
 sudo mount -t nfs nfs_ip:/srv/nfs/kubedata /mnt
 ```
+### Use this one
+```
+mount -t nfs -o sync 172.104.194.133:/srv/nfs/kubedata /mnt
+```
 ```
 sudo mount -t nfs nfs_ip:nfs_path host_client_path
 ```
