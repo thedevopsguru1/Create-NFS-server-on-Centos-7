@@ -32,6 +32,12 @@ sudo systemctl status nfs-server
  ```
  /srv/nfs/kubedata    *(rw,sync,no_subtree_check,no_root_squash,no_all_squash,insecure)
  ```
+ ##### Or for nodes
+ ```
+ /mnt/nfs_share  worker_node_01_ip_addr(rw,sync,no_subtree_check)
+/mnt/nfs_share  worker_node_02_ip_addr(rw,sync,no_subtree_check)
+/mnt/nfs_share  worker_node_03_ip_addr(rw,sync,no_subtree_check)
+```
  #### Instead of * , you can put servers ip address
  
  ## Let's make the local directory to be available for remote hosts:
