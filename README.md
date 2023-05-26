@@ -34,7 +34,7 @@ sudo systemctl status nfs-server
  ```
  #### Instead of * , you can put servers ip address
  
- ## Let's makje the local directory to be available for remote hosts:
+ ## Let's make the local directory to be available for remote hosts:
  ```
  sudo exportfs -rav
  ```
@@ -60,7 +60,7 @@ sudo systemctl status nfs-server
  ```
  firewall-cmd --list-all
  ```
- # Client Machins
+ # Client nodes
  
  ## To mount the NFS server to the remote hosts(clients) do ,
  ```
