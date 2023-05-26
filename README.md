@@ -80,6 +80,13 @@ showmount -e nfs_ip
 ```
 showmount -e 45.33.28.27
 ```
+### Don't forget to unmount it
+```
+umount host_client_path
+```
+```
+umount /mnt
+```
 
 # FIX ME
 ## To mount automatically 
